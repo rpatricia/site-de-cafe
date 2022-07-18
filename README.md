@@ -1,2 +1,15 @@
-# site-de-cafe
- Site de Café
+# site-de-café
+---
+ ## Site de Café
+
+ Site responsivo: linguagens usadas:<br>
+ :heavy_check_mark: HTML <br>
+ :heavy_check_mark: CSS <br>
+ :heavy_check_mark: JavaScript
+
+ <p></p>
+
+## Pré-visualização do projeto:
+[site de café]()
+
+<div align="left"><img src="assets/img-reademe.jpeg" width="100%"></div>
