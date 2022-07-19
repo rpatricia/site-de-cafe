@@ -1,4 +1,4 @@
-# site-de-café
+# Site-de-café
 ---
  ## Site de Café
 
@@ -12,4 +12,4 @@
 ## Pré-visualização do projeto:
 [site de café]()
 
-<div align="left"><img src="assets/img-reademe.jpeg" width="100%"></div>
+<div align="left"><img src="assets/home-img.jpeg" width="100%"></div>
