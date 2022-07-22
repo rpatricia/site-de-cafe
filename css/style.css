@@ -14,14 +14,18 @@
     outline: none; border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: 2s linear;
+    transition: .2s linear;
 }
 
 html {
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
 }
 
 html::-webkit-scrollbar-track {
@@ -58,7 +62,7 @@ section {
 .btn {
     margin-top: 1rem;
     display: inline-block;
-    padding: 9rem 3rem;
+    padding: .9rem 3rem;
     font-size: 1.7rem;
     color: #fff;
     background: var(--main-color);
@@ -66,7 +70,7 @@ section {
 }
 
 .btn:hover {
-    letter-spacing: 2rem;
+    letter-spacing: .2rem;
 }    
 
 .header {
@@ -74,9 +78,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1.5rem 7%;
     border-bottom: var(--border);
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top:0; left: 0; right: 0;
     z-index: 1000;
 }
 
@@ -92,8 +97,8 @@ section {
 
 .header .navbar a:hover {
     color: var(--main-color);
-    border-bottom: 1rem solid var(--main-color);
-    padding-bottom: 5rem;
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
 }
 
 .header .icons div {
@@ -170,7 +175,7 @@ section {
 
 .header .cart-items-container .cart-item .fa-times {
     position: absolute;
-    top: 1rem; right: 1rem;
+    top:1rem; right: 1rem;
     font-size: 2rem;
     cursor: pointer;
     color: var(--black);
@@ -257,13 +262,19 @@ section {
     line-height: 1.8;
 }
 
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
 .menu .box-container .box {
     padding: 5rem;
     text-align: center;
     border: var(--border);
 }
 
-.menu .box-container .box {
+.menu .box-container .box img {
     height: 10rem;
 }
 
@@ -276,7 +287,7 @@ section {
 .menu .box-container .box .price {
     color: #fff;
     font-size: 2.5rem;
-    padding: 5rem 0;
+    padding: .5rem 0;
 }
 
 .menu .box-container .box .price span {
@@ -311,9 +322,10 @@ section {
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
-    font-size: 2rem;border: var(--border);
+    font-size: 2rem;
+    border: var(--border);
     color: #fff;
-    margin: 3rem;
+    margin: .3rem;
 }
 
 .products .box-container .box .icons a:hover {
@@ -324,7 +336,7 @@ section {
     padding: 2.5rem 0;
 }
 
-.products .box-container .box .img {
+.products .box-container .box .image img {
     height: 25rem;
 }
 
@@ -365,7 +377,7 @@ section {
     padding: 3rem 2rem;
 }
 
-.review .box-container .box path {
+.review .box-container .box p{
     font-size: 1.5rem;
     line-height: 1.8rem;
     color: #ccc;
@@ -392,7 +404,7 @@ section {
 
 .content .row {
     display: flex;
-    background: var(--bg);
+    background: var(--black);
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -489,7 +501,7 @@ section {
 
  .blogs .box-container .box .content p {
     font-size: 1.6rem;
-    line-height: 1.8rem;
+    line-height: 1.8;
     color: #ccc;
     padding: 1rem 0;
  }
@@ -505,11 +517,12 @@ section {
 
  .footer .share a {
     height: 5rem;
+    width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
     color: #fff;
     border: var(--border);
-    margin: 3rem;
+    margin: .3rem;
     border-radius: 50%;
  }
 
@@ -519,13 +532,14 @@ section {
 
  .footer .links {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 2rem 0;
     gap: 1rem
  }
 
  .footer .links a {
-    padding: 7rem 2rem;
+    padding: .7rem 2rem;
     color: #fff;
     border: var(--border);
     font-size: 2rem;
@@ -549,4 +563,59 @@ section {
 
  /* media queries */
 
+
+ @media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
  

@@ -7,6 +7,9 @@
     <title>Site de Café</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+
 </head>
 <body>
 
@@ -18,11 +21,12 @@
 
    <nav class="navbar">
         <a href="#home">home</a>
-        <a href="#home">home</a>
-        <a href="#home">home</a>
-        <a href="#home">home</a>
-        <a href="#home">home</a>
-        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#products">products</a>
+        <a href="#review">eview</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
     </nav>
 
     <div class="icons">
@@ -37,7 +41,7 @@
     </div>
 
     <div class="cart-items-container">
-        <div class="cartem-item">
+        <div class="cart-item">
             <span class="fas fa-times"></span>
             <img src="assets/cart-item-1.png" alt="">
             <div class="content">
@@ -45,25 +49,25 @@
                 <div class="price">R$20,00</div>
             </div>
         </div>
-        <div class="cartem-item">
+        <div class="cart-item">
             <span class="fas fa-times"></span>
-            <img src="assets/cart-item-1.png" alt="">
+            <img src="assets/cart-item-2.png" alt="">
             <div class="content">
                 <h3>cart item 02</h3>
                 <div class="price">R$20,00</div>
             </div>
         </div>
-        <div class="cartem-item">
+        <div class="cart-item">
             <span class="fas fa-times"></span>
-            <img src="assets/cart-item-1.png" alt="">
+            <img src="assets/cart-item-3.png" alt="">
             <div class="content">
                 <h3>cart item 03</h3>
                 <div class="price">R$20,00</div>
             </div>
         </div>
-        <div class="cartem-item">
+        <div class="cart-item">
             <span class="fas fa-times"></span>
-            <img src="assets/cart-item-1.png" alt="">
+            <img src="assets/cart-item-4.png" alt="">
             <div class="content">
                 <h3>cart item 04</h3>
                 <div class="price">R$20,00</div>
@@ -172,32 +176,14 @@
 
 <!-- menu section ends -->
 
-<section class="procucts" id="products">
+<section class="prodcucts" id="products">
+    <h1 class="heading"> our <span>products</span></h1>
 
     <div class="box-container">
+
         <div class="box">
-            <div class="incons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="img">
-                <img src="assets/product-1.png" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffee</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price">R$20,00 <span>R$40,00</span></div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="incons">
+            <div class="icons">
+            
                 <a href="#" class="fas fa-shopping-cart"></a>
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
@@ -219,7 +205,7 @@
         </div>
 
         <div class="box">
-            <div class="incons">
+            <div class="icons">
                 <a href="#" class="fas fa-shopping-cart"></a>
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
@@ -241,13 +227,35 @@
         </div>
 
         <div class="box">
-            <div class="incons">
+            <div class="icons">
                 <a href="#" class="fas fa-shopping-cart"></a>
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
             <div class="img">
                 <img src="assets/product-3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>fresh coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">R$20,00 <span>R$40,00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="assets/product-4.png" alt="">
             </div>
             <div class="content">
                 <h3>fresh coffee</h3>
@@ -329,15 +337,15 @@
         
         <form action="">
             <h3>get in touch</h3>
-            <div class="inputbox">
+            <div class="inputBox">
                 <span class="fas fa-user"></span>
                 <input type="text" placeholder="name">
             </div>
-            <div class="inputbox">
+            <div class="inputBox">
                 <span class="fas fa-user"></span>
                 <input type="email" placeholder="email">
             </div>
-            <div class="inputbox">
+            <div class="inputBox">
                 <span class="fas fa-user"></span>
                 <input type="number" placeholder="number">
             </div>
@@ -360,7 +368,7 @@
                 <img src="assets/blog-1.jpeg" alt="">
             </div>
             <div class="content">
-                <a href="#" class="tittle">tasty and refreshing coffee</a>
+                <a href="#" class="title">tasty and refreshing coffee</a>
                 <span>by adim / Juno, 2022</span>
                 <p>Lorem ipsum dolor     sit amet consectetur adipiscing elit.NOon,cicta.</p>
                 <a href="#" class="btn">read more</a>
@@ -371,7 +379,7 @@
                 <img src="assets/blog-2.jpeg" alt="">
             </div>
             <div class="content">
-                <a href="#" class="tittle">tasty and refreshing coffee</a>
+                <a href="#" class="title">tasty and refreshing coffee</a>
                 <span>by adim / Juno, 2022</span>
                 <p>Lorem ipsum dolor     sit amet consectetur adipiscing elit.NOon,cicta.</p>
                 <a href="#" class="btn">read more</a>
@@ -382,7 +390,7 @@
                 <img src="assets/blog-3.jpeg" alt="">
             </div>
             <div class="content">
-                <a href="#" class="tittle">tasty and refreshing coffee</a>
+                <a href="#" class="title">tasty and refreshing coffee</a>
                 <span>by adim / Juno, 2022</span>
                 <p>Lorem ipsum dolor     sit amet consectetur adipiscing elit.NOon,cicta.</p>
                 <a href="#" class="btn">read more</a>
@@ -398,6 +406,7 @@
 <!-- footer sction starts -->
 
 <section class="footer">
+
     <div class="share">
         <a href="#" class="fab fa-facebook"></a>
         <a href="#" class="fab fa-twitter"></a>
@@ -416,7 +425,10 @@
         <a href="#">blogs</a>
     </div>
 
+    <div class="credit">created by <span> Renata Pausini</span> | all rights reserved</div>
 </section>
+
+
 
 <!-- footer ends -->
 
