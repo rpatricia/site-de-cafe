@@ -12,4 +12,4 @@
 ## Pré-visualização do projeto:
 [site de café]()
 
-<div align="left"><img src="https://i.ytimg.com/vi/TVFu4-Kd4oM/maxresdefault.jpg" width="100%"></div>
+<div align="left"><img src="assets/home3.jpg" width="100%"></div>
