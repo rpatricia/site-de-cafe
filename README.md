@@ -10,6 +10,6 @@
  <p></p>
 
 ## Pré-visualização do projeto:
-[site de café]()
+[site de café](https://site-de-cafe.netlify.app/)
 
 <div align="left"><img src="assets/home3.jpg" width="100%"></div>
