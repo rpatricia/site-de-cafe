@@ -3,7 +3,7 @@
 :root {
     --main-color:#d3ad7f;
     --black:#13131a;
-    --bg:#0100103;
+    --bg:#010103;
     --border:.1rem solid rgba(255,255,255, .3);
 }
 
@@ -209,7 +209,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(../assets/home-img.jpeg) no-repeat;
+    background: url(../assets/home1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -402,14 +402,16 @@ section {
     color: var(--main-color);
 }
 
-.content .row {
+.contact .row {
     display: flex;
+    align-items: center;
     background: var(--black);
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.content .row .map {
+
+.contact .row .map {
     flex: 1 1 45rem;
     width: 100%;
     object-fit: cover;
