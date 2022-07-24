@@ -1,6 +1,6 @@
 # Site-de-café
 ---
- ## Site de Café
+ ## Site de Café :sparkles:
 
  Site responsivo: linguagens usadas:<br>
  :heavy_check_mark: HTML <br>
