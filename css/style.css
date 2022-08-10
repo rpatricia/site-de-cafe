@@ -112,7 +112,7 @@ section {
     color: var(--main-color);
 }
 
-.menu-btn {
+#menu-btn {
     display: none;
 }
 
@@ -161,7 +161,7 @@ section {
     padding: 0 1.5rem;
 }
 
-.header .cart-items-container .active {
+.header .cart-items-container.active {
     right: 0;
 }
 
